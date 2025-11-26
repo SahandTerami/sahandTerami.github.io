@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="google-site-verification" content="4-Fru1JAlKUWETQzXjziCdVQicvVaDzcLFcsdji_Gy4" />
+    <title>Sahand Tangerami[Personal Webpage]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Sahand Tangerami-Personal Webpage" />
+    <meta name="keywords" content=" Control Theory, Sahand Tangerami, Tangerami,Tang-Erami, portfolio, Autonomous Vehicles, Robotics, Complex Sytems, Multi-Agent Systems, Multi Agent Systems, Machine Learning, MPC, Model Predictive Control" />
+    <meta name="author" content="Sahand" />
+    <link rel="shortcut icon" href="icon1.JPG">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/transition-animations.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+
+  <body>
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <div id="page" class="page">
+      <!-- Header -->
+      <header id="site_header" class="header mobile-menu-hide">
+        <div class="my-photo">
+          <img src="images/my-photo.jpg" alt="image">
+          <div class="mask"></div>
+        </div>
+
+        <div class="site-title-block">
+          <h1 class="site-title">Sahand Tangerami</h1>
+          <p class="site-description">Mechanical and Control Engineer</p>
+        </div>
+
+        <!-- Navigation & Social buttons -->
+        <div class="site-nav">
+          <!-- Main menu -->
+          <ul id="nav" class="site-main-menu">
+            <!-- About Me Subpage link -->
+            <li>
+              <a class="pt-trigger" href="#home" data-animation="58" data-goto="1">Home</a><!-- href value = data-id without # of .pt-page. Data-goto is the number of section -->
+            </li>
+            <!-- /About Me Subpage link -->
+            <!-- About Me Subpage link -->
+            <li>
+              <a class="pt-trigger" href="#about_me" data-animation="59" data-goto="2">About me</a>
+            </li>
+            <!-- /About Me Subpage link -->
+            <li>
+              <a class="pt-trigger" href="#resume" data-animation="60" data-goto="3">Resume</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#portfolio" data-animation="61" data-goto="4">Portfolio</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#contact" data-animation="59" data-goto="6">Contact</a>
+            </li>
+          </ul>
+          <!-- /Main menu -->
+
+          <!-- Social buttons -->
+          <ul class="social-links">
+            <li><a class="tip social-button" href="https://scholar.google.com/citations?hl=en&user=gHBgeIgAAAAJ" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a></li>
+            <li><a class="tip social-button" href="https://github.com/SahandTerami" title="GitHub"><i class="fa fa-github"></i></a></li>
+          </ul>
+          <!-- /Social buttons -->
+        </div>
+        <!-- Navigation & Social buttons -->
+      </header>
+      <!-- /Header -->
+
+      <!-- Mobile Header -->
+      <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+          <div class="mobile-site-title">Sahand Tangerami</div>
+        </div>
+
+        <a class="menu-toggle mobile-visible">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- /Mobile Header -->
+
+      <!-- Main Content -->
+      <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+        <div class="pt-wrapper">
+          <!-- Subpages -->
+          <div class="subpages">
+
+            <!-- Home Subpage -->
+            <section class="pt-page pt-page-1 section-with-bg section-paddings-0" style="background-image: url(images/home_page.jpg);" data-id="home">
+              <div class="home-page-block-bg">
+                <div class="mask"></div>
+              </div>
+              <div class="home-page-block">
+                <div class="v-align">
+                  <h2>Sahand Tangerami</h2>
+                  <div id="rotate" class="text-rotate">
+                    <div>
+                      <p class="home-page-description">Control Engineer</p>
+                    </div>
+                    <div>
+                      <p class="home-page-description">Control Theory and Complex Systems Researcher</p>
+                    </div>
+                    <div>
+                      <p class="home-page-description">MATLAB and C++ Tutor</p>
+                    </div>
+                  </div>
+
+                  <div class="block end" style="text-align: center">
+                    <ul class="info-list">
+                      <!--li><span class="title">Age</span><span class="value">25</span></li>
+                      <li><span class="title">Address</span><span class="value">88 Some Street, Some Town</span></li -->
+                      <li><span class="title">Google Scholar</span><span class="value"><a href="https://scholar.google.com/citations?hl=en&user=gHBgeIgAAAAJ">Sahand Tangerami</a></span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End of Home Subpage -->
+
+            <!-- About Me Subpage -->
+            <section class="pt-page pt-page-2" data-id="about_me">
+              <div class="section-title-block">
+                <h2 class="section-title">About Me</h2>
+                <h5 class="section-description">Researcher, Programmer, Tutor, Dream chaser</h5>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-6 subpage-block">
+                  <div class="general-info">
+                    <h3>I am a Researcher Graduated from K. N. Toosi University of Technology</h3>
+                    <p>My research primarily focuses on Control Theory, Optimal Control—particularly Model Predictive Control—Optimization, Data-Driven Modeling, Autonomous Vehicles, Complex Systems, and Multi-Agent Systems.
+                      Currently, my primary focus is on developing control and modeling architectures for uncertain systems, particularly with applications in autonomous vehicles.
+                      My work combines simulation and implementation, which I carry out using MATLAB, Julia, and C++.
+                      My Master's thesis was under the supervision of Prof. A. Nahvi at K.N.Toosi University of Technology.
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 subpage-block">
+                  <div class="block-title">
+                    <h3>Motto (My Favourite quotes)</h3>
+                  </div>
+                  <div class="testimonials owl-carousel">
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item">
+                      <!-- Testimonial Content -->
+                      <div class="testimonial-content">
+                        <div class="testimonial-text">
+                          <p>"What is a person, if not the marks they leave behind?"</p>
+                        </div>
+                      </div>            
+                      <!-- /Testimonial Content -->  
+                      <!-- Testimonial Author -->
+                      <div class="testimonial-credits">
+                        <!-- Picture -->
+                        <div class="testimonial-picture">
+                          <img src="images/testimonials/testimonila_photo_2.png" alt="">
+                        </div>              
+                        <!-- /Picture -->
+                        <!-- Testimonial author information -->
+                        <div class="testimonial-author-info">
+                          <p class="testimonial-author">V.E. Schwab</p>
+                          <p class="testimonial-firm">The Invisible Life of Addie LaRue</p>
+                        </div>
+                      </div>
+                      <!-- /Testimonial author information -->               
+                    </div>
+                    <!-- End of Testimonial 2 -->
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item" style="width:100%">
+                      <!-- Testimonial Content -->
+                      <div class="testimonial-content">
+                        <div class="testimonial-text">
+                          <p>"So we'll train, Feyre, until the last possible day. Because we never know if just one extra hour will make thedifference."</p>
+                        </div>
+                      </div>            
+                      <!-- /Testimonial Content -->  
+                      <!-- Testimonial Author -->
+                      <div class="testimonial-credits">
+                        <!-- Picture -->
+                        <div class="testimonial-picture">
+                          <img src="images/testimonials/testimonial_photo_1.png" alt="">
+                        </div>              
+                        <!-- /Picture -->
+                        <!-- Testimonial author information -->
+                        <div class="testimonial-author-info">
+                          <p class="testimonial-author">Sarah J. Maas</p>
+                          <p class="testimonial-firm">A Court of Wings and Ruin</p>
+                        </div>
+                      </div>
+                      <!-- /Testimonial author information -->               
+                    </div>
+                    <!-- End of Testimonial 2 -->
+
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item">
+                      <!-- Testimonial Content -->
+                      <div class="testimonial-content">
+                        <div class="testimonial-text">
+                          <p>"We've all got both light and dark inside us. What matters is the part we choose to act on. That's who we really are."</p>
+                        </div>
+                      </div>            
+                      <!-- /Testimonial Content -->  
+                      <!-- Testimonial Author -->
+                      <div class="testimonial-credits">
+                        <!-- Picture -->
+                        <div class="testimonial-picture">
+                          <img src="images/testimonials/testimonila_photo_3.png" alt="">
+                        </div>              
+                        <!-- /Picture -->
+                        <!-- Testimonial author information -->
+                        <div class="testimonial-author-info">
+                          <p class="testimonial-author">J.K. Rowling </p>
+                          <p class="testimonial-firm">Harry Potter and the Order of the Phoenix</p>
+                        </div>
+                      </div>
+                      <!-- /Testimonial author information -->               
+                    </div>
+                    <!-- End of Testimonial 2 -->
+
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item">
+                      <!-- Testimonial Content -->
+                      <div class="testimonial-content">
+                        <div class="testimonial-text">
+                          <p>"The people who are crazy enough to think they can change the world are the ones who do."</p>
+                        </div>
+                      </div>            
+                      <!-- /Testimonial Content -->  
+                      <!-- Testimonial Author -->
+                      <div class="testimonial-credits">
+                        <!-- Picture -->
+                        <div class="testimonial-picture">
+                          <img src="images/testimonials/steve.jpg" alt="">
+                        </div>              
+                        <!-- /Picture -->
+                        <!-- Testimonial author information -->
+                        <div class="testimonial-author-info">
+                          <p class="testimonial-author">Steve Jobs </p>
+                          <p class="testimonial-firm">"Think different" Commercial</p>
+                        </div>
+                      </div>
+                      <!-- /Testimonial author information -->               
+                    </div>
+                    <!-- End of Testimonial 2 -->
+
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item">
+                      <!-- Testimonial Content -->
+                      <div class="testimonial-content">
+                        <div class="testimonial-text">
+                          <p>"Somewhere inside all of us is the power to change the world."</p>
+                        </div>
+                      </div>            
+                      <!-- /Testimonial Content -->  
+                      <!-- Testimonial Author -->
+                      <div class="testimonial-credits">
+                        <!-- Picture -->
+                        <div class="testimonial-picture">
+                          <img src="images/testimonials/testimonila_photo_4.png" alt="">
+                        </div>              
+                        <!-- /Picture -->
+                        <!-- Testimonial author information -->
+                        <div class="testimonial-author-info">
+                          <p class="testimonial-author">Roald Dahl</p>
+                          <p class="testimonial-firm">Matilda</p>
+                        </div>
+                      </div>
+                      <!-- /Testimonial author information -->               
+                    </div>
+                    <!-- End of Testimonial 2 -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Services block -->
+              <div class="block-title">
+                <h3>Specialities</h3>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/1.png" alt="">
+                      <h4>Control Engineer</h4>
+                      <p>I’ve always been fascinated by how control and optimization can bring intelligence to machines. There’s something magical about watching an autonomous vehicle make decisions in real time—especially when you’ve designed the algorithm behind it. I love exploring new ways to make these systems smarter, faster, and more reliable.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/management.png" alt="">
+                      <h4>Programmer</h4>
+                      <p>Writing code has always been my escape. I can sit for hours, tweaking and testing, until I forget what time it is. But nothing beats the feeling of seeing my code come to life—controlling a robot, making a system move, or watching a real device react exactly as I imagined.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/copywrite.png" alt="">
+                      <h4>Researcher</h4>
+                      <p>For me, research is more than just equations and code—it's a way to bring hope. I dream that one day, my work can help save lives or make someone's everyday struggle a little easier, especially in my own country. That’s the reason I keep going, even when the path gets tough.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/consultant.png" alt="">
+                      <h4>Tutor</h4>
+                      <p>There’s something truly fulfilling about sharing what I’ve learned with others and watching them grow. I find joy in guiding the next generation, knowing that the knowledge I pass on can help shape their future and, in turn, the future of engineering.
+
+</p>
+                    </div>
+                  </div>
+                </div>
+                
+
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/creativity.png" alt="">
+                      <h4>ٌWriter</h4>
+                      <p>For me, writing is like breathing—it gives my mind freedom to wander, lets my imagination take flight, and transforms the whispers of my inner world into vivid stories on the page. Through writing, I find a place where my soul feels truly alive.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/Anime.png" alt="">
+                      <h4>Anime lover</h4>
+                      <p>Anime opens a door to a world where my worries fade away, and my mind is free to wander through endless imagination. It fills my heart with hope, sparks my creativity, and brings me moments of pure joy and inspiration.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/Education-01.png" alt="">
+                      <h4>Translator</h4>
+                      <p>Being proficient in both Persian and English enables me to act as an effective bridge, facilitating clear communication and the seamless exchange of ideas across cultural and linguistic boundaries.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/6.png" alt="">
+                      <h4>Athlete</h4>
+                      <p>Being a goalkeeper gives me a strong sense of power because the team depends on me. As the last line of defense, I carry great responsibility and confidence on the field. This role fuels my passion for sports, which also strengthens my body and keeps me healthy.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+              <!-- End of Services block -->
+
+              <!-- Clients block -->
+              <div class="block-title">
+                <h3>Have Had a Role in:</h3>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-4 col-md-2 subpage-block">
+                  <div class="client_block">
+                    <a href="https://yu.ac.ir/en" target="_blank"><img src="images/clients/client_1.png" alt="image"></a>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-md-2 subpage-block">
+                  <div class="client_block">
+                    <a href="https://www.kntu.ac.ir/" target="_blank"><img src="images/clients/client_2.png" alt="image"></a>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-md-2 subpage-block">
+                  <div class="client_block">
+                    <a href="https://www.unm.edu/" target="_blank"><img src="images/clients/client_3.png" alt="image"></a>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-md-2 subpage-block">
+                  <div class="client_block">
+                    <a href="https://transis.me/" target="_blank"><img src="images/clients/client_4.png" alt="image"></a>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-md-2 subpage-block">
+                  <div class="client_block">
+                    <a href="https://www.emamrezaedu.com/" target="_blank"><img src="images/clients/client_5.png" alt="image"></a>
+                  </div>
+                </div>
+
+              </div>
+              <!-- End of Clients block -->
+
+<!-- 
+  Fun facts block
+  <div class="block-title">
+    <h3>Fun Facts</h3>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-3 subpage-block">
+      <div class="fun-fact-block gray-bg"> 
+        <i class="pe-7s-icon pe-7s-smile"></i>
+        <h4>Happy Students</h4>
+        <span class="fun-value">78</span>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 subpage-block">
+      <div class="fun-fact-block"> 
+        <i class="pe-7s-icon pe-7s-alarm"></i>
+        <h4>Working Hours</h4>
+        <span class="fun-value">5,259</span>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 subpage-block">
+      <div class="fun-fact-block gray-bg"> 
+        <i class="pe-7s-icon pe-7s-bookmarks"></i>
+        <h4>Boooks Read</h4>
+        <span class="fun-value">300</span>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 subpage-block">
+      <div class="fun-fact-block"> 
+        <i class="pe-7s-icon pe-7s-date"></i>
+        <h4>Years of Study</h4>
+        <span class="fun-value">19</span>
+      </div>
+    </div>
+  </div>
+  End of Fun facts block 
+-->
+
+            </section>
+            <!-- End of About Me Subpage -->
+
+            <!-- Resume Subpage -->
+            <section class="pt-page pt-page-3" data-id="resume">
+              <div class="section-title-block">
+                <h2 class="section-title">Resume</h2>
+                <!--h5 class="section-description">7 Years of Experience</h5-->
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                    <h3>Education</h3>
+                  </div>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2018-2022</h5>
+                      <h4 class="event-name">M.Sc. in Mechanical Engineering, Dynamics and Control</h4>
+                      <span class="event-description">K. N. Toosi University of Technology</span>
+                      <p>Thesis: Design and Implementation of Model Predictive Control for Improving Stability of a Vehicle Teleoperation System</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2013-2018</h5>
+                      <h4 class="event-name">B.Sc. in Mechanical Engineering</h4>
+                      <span class="event-description">Yasouj University</span>
+                      <p>Thesis: Design and Implementation of a PID Controller and Kalman Filter for Controlling a Quadrotor’s Motion</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2009-2013</h5>
+                      <h4 class="event-name">Diploma in Mathematics and Physics</h4>
+                      <span class="event-description">Taha High School</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                    <h3>Experience</h3>
+                  </div>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2024 - Current</h5>
+                      <h4 class="event-name">Research Assistant</h4>
+                      <span class="event-description">University of New Mexico</span>
+                      <p>Prof. Francesco Sorrentino </p>
+                      <p>Research Area: Complex Systems, Multi-Agent Systems, Machine Learning, Optimization, and Optimal Control</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2019 - 2023</h5>
+                      <h4 class="event-name">Research Assistant</h4>
+                      <span class="event-description">Virtual Reality Laboratory - K.N. Toosi University of Technology</span>
+                      <p>Prof. Ali Nahvi </p>
+                      <p>Research Area: Control Theory, Model Predictive Control, Autonomous Vehicles Systems, and Driver Modeling</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2020 -2022</h5>
+                      <h4 class="event-name">Research Assistant</h4>
+                      <span class="event-description">University of Southern California</span>
+                      <p>Prof. Hamid Chabok </p>
+                      <p>Research Area: Optics, Photoacoustic Imaging, and Light and Sound Interaction, Biomechanics</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2020 -2022</h5>
+                      <h4 class="event-name">Graduate Teaching Assistant</h4>
+                      <span class="event-description">K.N. Toosi University of Technology</span>
+                      <p>Teaching assistant of Automatic Control, Prof. Ali. Nahvi </p>
+                      <p>Teaching assistant of Technical English Language, Prof. Ali. Nahvi</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                    <h3>Control and Machine Learning Skills</h3>
+                  </div>
+                  <div class="skills-info">
+                    <h4>Optimal Control</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-1"></div>
+                    </div> 
+
+                    <h4>Automatic Control</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-2"></div>
+                    </div> 
+
+                    <h4>Fuzzy Logic Control</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-3"></div>
+                    </div> 
+
+                    <h4>Model Predictive Control</h4>                               
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-2"></div>
+                    </div>
+
+                    <h4>Linear–quadratic regulator</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-2"></div>
+                    </div>
+                    
+                    <h4>Stability Analysis</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-3"></div>
+                    </div> 
+                    
+                     <h4>Reservoir Computing</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-5"></div>
+                    </div> 
+                  </div>
+
+                  <div class="block-title">
+                    <h3>Coding Skills:</h3>
+                  </div>
+                  <div class="skills-info">
+                 <h4>MATLAB</h4>                               
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-4"></div>
+                    </div>
+
+                  <h4>C++ (some uses)</h4>                               
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-6"></div>
+                    </div>
+
+                  <h4>Julia (some uses)</h4>                               
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-1"></div>
+                    </div>
+                  </div>
+
+                  <div class="block-title">
+                    <h3>Laboratory Skills:</h3>
+                  </div>
+                  <div class="skills-info">
+                 <h4>Microcontroller Programming</h4>                               
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-6"></div>
+                    </div>
+
+                  <h4>Working with Electric Motors and Optical Encoders</h4>                               
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-5"></div>
+                    </div>
+
+                  <h4>Working with IMUs</h4>                               
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-3"></div>
+                    </div>
+
+                   <h4>Working with Sensors</h4>                               
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-5"></div>
+                    </div>
+                    
+                  </div>
+
+                  <div class="block-title">
+                    <h3>Other Computer Skills: </h3>
+                  </div>
+                  <div class="skills-info">
+                    <h4>CarSim</h4>                               
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-2"></div>
+                    </div>
+
+                    <h4>SOLIDWORKS</h4>                               
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-4"></div>
+                    </div>
+
+                    <h4>ANSYS FLUENT(some uses)</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-7"></div>
+                    </div>
+
+                    <h4>COMSOL</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-7"></div>
+                    </div> 
+
+                    <h4>ABAQUS</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-7"></div>
+                    </div>
+
+                    <h4>LaTeX</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-6"></div>
+                    </div>
+
+                    <h4>Unreal Engine</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-3"></div>
+                    </div>
+
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+                  <div class="download-cv-block">
+                    <a class="button" target="_blank" href="...???">Download CV</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Resume Subpage -->
+
+
+
+
+            <!-- Portfolio Subpage -->
+            <section class="pt-page pt-page-4" data-id="portfolio">
+              <div class="section-title-block">
+                <h2 class="section-title">Portfolio</h2>
+                <h5 class="section-description">My Works</h5>
+              </div>
+
+              <!-- Portfolio Content -->
+              <div class="portfolio-content">
+                            
+                <!-- Portfolio filter -->
+                <ul id="portfolio_filters" class="portfolio-filters">
+                  <li class="active">
+                    <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
+                  </li>
+                  <li>
+                    <a class="filter btn btn-sm btn-link" data-group="publication">Publications</a>
+                  </li>
+                  <li>
+                    <a class="filter btn btn-sm btn-link" data-group="research">Research</a>
+                  </li>
+                  <li>
+                    <a class="filter btn btn-sm btn-link" data-group="project">Project</a>
+                  </li>
+                  <li>
+                    <a class="filter btn btn-sm btn-link" data-group="certificate">Certificate</a>
+                  </li>
+                  <li>
+                    <a class="filter btn btn-sm btn-link" data-group="video">Video</a>
+                  </li>
+                </ul>
+                <!-- End of Portfolio filter -->
+
+                <!-- Portfolio Grid -->
+                <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+
+                
+                  <!-- Portfolio Item 1 -->
+                  <figure class="item" data-groups='["all", "publication"]'>
+                    <a class="ajax-page-load" href="p_adverserial_agent.html">
+                      <img src="images/portfolio/r_1.PNG" alt="">
+                      <div>
+                        <h5 class="name">Paper: Extreme vulnerability to intruder attacks destabilizes network dynamics </h5>
+                        <small>Publication: Paper</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 1 -->
+
+                  <!-- Portfolio Item 2 -->
+                  <figure class="item" data-groups='["all", "publication"]'>
+                    <a class="ajax-page-load" href="p_patent_optics.html">
+                      <img src="images/portfolio/r_2.PNG" alt="">
+                      <div>
+                        <h5 class="name">U.S. Provisional Patent: Three-Dimensional Dynamic Lensing by Enhanced Light-Sound Interactions </h5>
+                        <small>Publication: Patent</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 2 -->
+
+
+                  <!-- Portfolio Item 3 -->
+                  <figure class="item" data-groups='["all", "research"]'>
+                    <a class="ajax-page-load" href="p_synchronization.html">
+                      <img src="images/portfolio/r_3.jpg" alt="">
+                      <div>
+                        <h5 class="name">Improving The Network’s Synchronization Against the Intruder’s Attack"
+                        </h5>
+                        <small>Research</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 3 -->
+
+                  <!-- Portfolio Item 4 -->
+                  <figure class="item" data-groups='["all", "research"]'>
+                    <a class="ajax-page-load" href="p_lightsound.html">
+                      <img src="images/portfolio/r_4.jpg" alt="">
+                      <div>
+                        <h5 class="name">Photoacoustic Microscopy of the Brain Through an Intact Skull"
+                        </h5>
+                        <small>Research</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 4 -->
+
+                  <!-- Portfolio Item 5 -->
+                  <figure class="item" data-groups='["all", "research"]'>
+                    <a class="ajax-page-load" href="p_msc_thesis.html">
+                      <img src="images/portfolio/r_5.jpg" alt="">
+                      <div>
+                        <h5 class="name">MSc Thesis: Design and Implementation of Model Predictive Control for Improving Stability of a Vehicle Teleoperation System </h5>
+                        <small>Research</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 5 -->
+
+
+                  <!-- Portfolio Item 6 -->
+                  <figure class="item" data-groups='["all", "research"]'>
+                    <a class="ajax-page-load" href="p_reservoir.html">
+                      <img src="images/portfolio/r_6.jpg" alt="">
+                      <div>
+                        <h5 class="name">Optimizing the Network Topology of a Linear Reservoir Computer </h5>
+                        <small>Research</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 6 -->
+
+                  <!-- Portfolio Item 7 -->
+                  <figure class="item" data-groups='["all", "research"]'>
+                    <a class="ajax-page-load" href="p_mpc_auto.html">
+                      <img src="images/portfolio/r_7.jpg" alt="">
+                      <div>
+                        <h5 class="name">Improving the Stability of an Autonomous Vehicle under Modeling Uncertainty and Fault Conditions </h5>
+                        <small>Research</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 7 -->
+
+                  <!-- Portfolio Item 8 -->
+                  <figure class="item" data-groups='["all", "research"]'>
+                    <a class="ajax-page-load" href="p_putativeRC.html">
+                      <img src="images/portfolio/r_8.jpg" alt="">
+                      <div>
+                        <h5 class="name">Designing a Putative Reservoir Computing-Based Predictor for Chaotic Systems </h5>
+                        <small>Research</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 8 -->
+
+                  <!-- Portfolio Item 9 -->
+                  <figure class="item" data-groups='["all", "research"]'>
+                    <a class="ajax-page-load" href="p_bsc_thesis.html">
+                      <img src="images/portfolio/r_9.jpg" alt="">
+                      <div>
+                        <h5 class="name">BSc Thesis: Design and Implementation of a PID Controller and Kalman Filter for Controlling a Quadrotor’s Motion</h5>
+                        <small>Research</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 9 -->
+
+                  <!-- Portfolio Item 10 -->
+                  <figure class="item" data-groups='["all","certificate"]'>
+                    <a href="images/portfolio/c_1.jpg" class="lightbox" title="Expert SOLIDWORKS Training Course">
+                      <img src="images/portfolio/c_1.jpg" alt="">
+                      <div>
+                        <h5 class="name">SOLIDWORKS Training Courseو South Industrial Management Institute</h5>
+                        <small>Certificate</small>
+                        <i class="fa fa-image"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 10 -->
+
+                  <!-- Portfolio Item 11 -->
+                  <figure class="item" data-groups='["all", "certificate"]'>
+                    <a href="images/portfolio/c_2.jpg" class="lightbox" title="ABAQUS Training Course, Coursera">
+                      <img src="images/portfolio/c_2.jpg" alt="">
+                      <div>
+                        <h5 class="name">ABAQUS Training Course, South Industrial Management Institute</h5>
+                        <small>Certificate</small>
+                        <i class="fa fa-image"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 11 -->
+                  
+                  <!-- Portfolio Item 12 -->
+                  <figure class="item" data-groups='["all", "project"]'>
+                    <a class="ajax-page-load" href="p_activesuspension.html">
+                      <img src="images/portfolio/p_1.jpg" alt="">
+                      <div>
+                        <h5 class="name">Controlling the Vehicle’s Active Suspension System with LQR and LQG </h5>
+                        <small>Research</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 12 -->
+
+                  <!-- Portfolio Item 13 -->
+                  <figure class="item" data-groups='["all", "project"]'>
+                    <a class="ajax-page-load" href="p_parallel.html">
+                      <img src="images/portfolio/p_2.jpg" alt="">
+                      <div>
+                        <h5 class="name">Optimal Parallel Parking of an Autonomous Vehicle Using Fuzzy Logic Control and LQR </h5>
+                        <small>Research</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 13 -->
+
+                  <!-- Portfolio Item 14 -->
+                  <figure class="item" data-groups='["all", "project"]'>
+                    <a class="ajax-page-load" href="p_parallel.html">
+                      <img src="images/portfolio/p_3.jpg" alt="">
+                      <div>
+                        <h5 class="name">Controlling the Inverted Pendulum’s Motions Using Fuzzy Logic Control and LQR </h5>
+                        <small>Research</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 14 -->
+
+                  <!-- Portfolio Item 15 -->
+                  <figure class="item" data-groups='["all", "project"]'>
+                    <a class="ajax-page-load" href="p_latervehic.html">
+                      <img src="images/portfolio/p_4.jpg" alt="">
+                      <div>
+                        <h5 class="name">Controlling the Lateral Motion of a Vehicle Using PID and State Feedback Controllers</h5>
+                        <small>Project</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 15 -->
+
+                  <!-- Portfolio Item 16 -->
+                  <figure class="item" data-groups='["all", "project"]'>
+                    <a class="ajax-page-load" href="p_fluidcontrol.html">
+                      <img src="images/portfolio/p_5.jpg" alt="">
+                      <div>
+                        <h5 class="name">Fluid Level Control in Two Connected Nonlinaer Tanks Using State Vector Feedback Controller </h5>
+                        <small>Project</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 16 -->
+
+
+                  <!-- Portfolio Item 17 -->
+                  <figure class="item" data-groups='["all", "project"]'>
+                    <a class="ajax-page-load" href="p_sensorfusion.html">
+                      <img src="images/portfolio/p_6.jpg" alt="">
+                      <div>
+                        <h5 class="name">Simulation of Autonomous Driving Using Interpretable Sensor Fusion Transformer</h5>
+                        <small>Project</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 17 -->
+
+
+                  <!-- Portfolio Item 18 -->
+                  <figure class="item" data-groups='["all", "project"]'>
+                    <a class="ajax-page-load" href="p_VR.html">
+                      <img src="images/portfolio/p_7.jpg" alt="">
+                      <div>
+                        <h5 class="name">Design and Implementation of a Virtual Reality-Based Multi-Stage Scenario to Overcome Fear of Darkness Using Unreal Engine</h5>
+                        <small>Project</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 18 -->
+
+
+                  <!-- Portfolio Item 19 -->
+                  <figure class="item" data-groups='["all", "project"]'>
+                    <a class="ajax-page-load" href="p_Kalman.html">
+                      <img src="images/portfolio/p_8.jpg" alt="">
+                      <div>
+                        <h5 class="name">Design Kalman Filter to Estimate a Noisy Signal</h5>
+                        <small>Project</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 19 -->
+
+
+                  <!-- Portfolio Item 20 -->
+                  <figure class="item" data-groups='["all", "project"]'>
+                    <a class="ajax-page-load" href="p_Porous.html">
+                      <img src="images/portfolio/p_9.jpg" alt="">
+                      <div>
+                        <h5 class="name">Modeling Fluid Flow Through Porous Media</h5>
+                        <small>Project</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 20 -->
+
+                  <!-- Portfolio Item 21 -->
+                  <!--figure class="item" data-groups='["all", "video"]'>
+                    <a href="https://youtu.be/60AKUi_MPdY?autoplay=1" title="Canny Edge Detection" class="lightbox mfp-iframe">
+                      <img src="images/portfolio/v_1.jpg" alt="">
+                      <div>
+                        <h5 class="name">Implementing Canny Edge Detection on a particular set from the KITTI dataset</h5>
+                        <small>Video</small>
+                        <i class="fa fa-video-camera"></i>
+                      </div>
+                    </a>
+                  </figure-->
+                  <!-- /Portfolio Item 21 -->
+
+
+
+                  <!-- Portfolio Item 22 -->
+                  <!--figure class="item" data-groups='["all", "video"]'>
+                    <a href="https://youtu.be/71pQPXmOyEA?autoplay=1" title="Path Tracking Algorithm" class="lightbox mfp-iframe">
+                      <img src="images/portfolio/v_2.jpg" alt="">
+                      <div>
+                        <h5 class="name">Implementing a Path Tracking Algorithm on the Turtle in Turtlesim | ROS</h5>
+                        <small>Video</small>
+                        <i class="fa fa-video-camera"></i>
+                      </div>
+                    </a>
+                  </figure-->
+                  <!-- /Portfolio Item 22 -->
+
+                  
+                  <!-- Portfolio Item 23 -->
+                  <!--figure class="item" data-groups='["all",  "video"]'>
+                    <a href="https://youtu.be/A4EvvPbbHXw?autoplay=1" title="CartPole" class="lightbox mfp-iframe">
+                      <img src="images/portfolio/v_3.jpg" alt="">
+                      <div>
+                        <h5 class="name">CartPole via policy gradient (REINFORCE)</h5>
+                        <small>Video</small>
+                        <i class="fa fa-video-camera"></i>
+                      </div>
+                    </a>
+                  </figure-->
+                  <!-- /Portfolio Item 823 -->
+
+                </div>
+                <!-- /Portfolio Grid -->
+
+              </div>
+              <!-- /Portfolio Content -->
+
+            </section>
+            <!-- /Portfolio Subpage -->
+
+            <!-- Contact Subpage -->
+            <section class="pt-page pt-page-6" data-id="contact">
+              <div class="section-title-block">
+                <h2 class="section-title">Contact</h2>
+                <h5 class="section-description">Get in Touch</h5>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-6 subpage-block">
+                  <div class="block-title">
+                    <h3>Get in Touch</h3>
+                  </div>
+                  <p>I am interested and available to participate in research projects focused on autonomous vehicles, optimization, model predictive control, machine learning, and dynamic modeling.
+                    You can also contact me if you need tutoring in MATLAB, Reservoir Computing (both theory and coding), Model Predictive Control (theory and implementation), or controller implementation on microcontrollers.</p>
+                  <p>I’m also eager to explore new fields in my free time, so please don’t hesitate to contact me if you’d like to discuss any exciting projects you have in mind.</p>
+                  <p>You can reach me by email. I usually check it daily, so please include your contact information and a detailed message explaining your ideas. I will get back to you for further discussion. </p>
+                  <div class="contact-info-block">
+                    <div class="ci-icon">
+                      <i class="pe-7s-icon pe-7s-mail"></i>
+                    </div>
+                    <div class="ci-text">
+                      <h5>sahandterami@gmail.com</h5>
+                    </div>
+                  </div>
+                  <div class="contact-info-block">
+                    <div class="ci-icon">
+                      <i class="pe-7s-icon pe-7s-check"></i>
+                    </div>
+                    <div class="ci-text">
+                      <h5>Freelance Available</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 subpage-block">
+                  <div class="block-title">
+                    <h3>Contact Form</h3>
+                  </div>
+
+                  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mqknvwrp" method="post">
+                    <fieldset id="fs-frm-inputs">
+                      <div class="controls">
+                        <div class="form-group">
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+                            <div class="form-control-border"></div>
+                            <i class="form-control-icon fa fa-user"></i>
+                            <div class="help-block with-errors"></div>
+                        </div>
+  
+                        <div class="form-group">
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                            <div class="form-control-border"></div>
+                            <i class="form-control-icon fa fa-envelope"></i>
+                            <div class="help-block with-errors"></div>
+                        </div>
+  
+                        <div class="form-group">
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                            <div class="form-control-border"></div>
+                            <i class="form-control-icon fa fa-comment"></i>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-callback="correctCaptcha"></div>
+                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                  </form>
+
+          </div>
+        </div>
+        <!-- /Page changer wrapper -->
+      </div>
+      <!-- /Main Content -->
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/page-transition.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/jquery.shuffle.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
