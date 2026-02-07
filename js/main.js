@@ -9,7 +9,7 @@
 "use strict";
     
     // Portfolio subpage filters
-    /*function portfolio_init() {
+    function portfolio_init() {
         var portfolio_grid = $('#portfolio_grid'),
             portfolio_filter = $('#portfolio_filters');
             
@@ -34,29 +34,7 @@
             });
 
         }
-    }*/
-
-    // Get filter buttons and project items
-        const filterButtons = document.querySelectorAll('#projects_filters li');
-        const projects = document.querySelectorAll('#projects_list .project-item');
-        
-        // Filter function
-        filterButtons.forEach(button => {
-          button.addEventListener('click', () => {
-            const filter = button.getAttribute('data-filter');
-        
-            projects.forEach(project => {
-              const groups = JSON.parse(project.getAttribute('data-groups'));
-              if (filter === 'all' || groups.includes(filter)) {
-                project.style.display = 'list-item';
-              } else {
-                project.style.display = 'none';
-              }
-            });
-          });
-        });
-
-    
+    }
     // /Portfolio subpage filters
 
     // Contact form validator
@@ -143,32 +121,15 @@
     $(document).ready(function(){
 
         // Initialize Portfolio grid
-        //var $portfolio_container = $(".portfolio-grid");
+        var $portfolio_container = $(".portfolio-grid");
 
-        // Initialize project list
-        function initProjects() {
-            // Select the project container
-            const projectContainer = document.getElementById('projects_list');
-        
-            // Make sure container exists
-            if (!projectContainer) return;
-        
-            // Select all project items
-            const projects = projectContainer.querySelectorAll('.project-item');
-        
-            // Initially, show all projects
-            projects.forEach(project => {
-                project.style.display = 'list-item';
-            });
-        }
-
-        
-        //$portfolio_container.imagesLoaded(function () {
-        //   portfolio_init(this);
-        //});
+        // Initialize project list    
+        $portfolio_container.imagesLoaded(function () {
+           portfolio_init(this);
+        });
 
         // Portfolio hover effect init
-        //$(' #portfolio_grid > figure > a ').each( function() { $(this).hoverdir(); } );
+        $(' #portfolio_grid > figure > a ').each( function() { $(this).hoverdir(); } );
 
         // Mobile menu
         $('.menu-toggle').click(function() { 
