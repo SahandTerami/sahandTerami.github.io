@@ -123,9 +123,8 @@
         // Initialize Portfolio grid
         var $portfolio_container = $(".portfolio-grid");
 
-        // Initialize project list    
         $portfolio_container.imagesLoaded(function () {
-           portfolio_init(this);
+            portfolio_init(this);
         });
 
         // Portfolio hover effect init
