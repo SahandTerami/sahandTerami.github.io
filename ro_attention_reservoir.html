@@ -1,0 +1,96 @@
+<div id="portfolio-page" class="portfolio-page-content">
+    <div class="container">
+        <!-- Portfolio Navigation -->
+        <div class="portfolio-nav">
+            <div id="portfolio-close-button" class="portfolio-close-button">
+                <a href="#portfolio"><i class="fa fa-close"></i></a>
+            </div>
+        </div>
+
+        <!-- Portfolio Title -->
+        <div class="portfolio-title">
+            <h1>Developing a Learning-Based Control Architecture By Integrating Attention Mechanism and Reservoir Computing</h1>
+        </div>
+
+        <div class="row">
+            <!-- Images / Carousel -->
+            <div class="col-sm-7 col-md-7 portfolio-block">
+                <div class="owl-carousel portfolio-page-carousel">
+                    <div class="item">
+                        <img src="images/portfolio/Research/ro_attention_reservoir_1.JPG" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/Research/ro_attention_reservoir_2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/Research/ro_attention_reservoir_3.jpg" alt="">
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed: 1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+                    }); 
+                </script>
+            </div>
+
+            <!-- Project Description -->
+            <div class="col-sm-5 col-md-5 portfolio-block">
+
+                <ul class="project-general-info">
+                    <li>
+                        <i class="fa fa-user"></i> 
+                        <strong>Collaborators:</strong>
+                        <a href="https://scholar.google.com/citations?user=lHPbcs8AAAAJ&hl=en" target="_blank">Wenbin Wan</a>, 
+                        <a href="https://scholar.google.com/citations?user=RbczS_gAAAAJ&hl=en" target="_blank">Leilei Cui</a>,
+                        <a href="https://scholar.google.com/citations?user=5zVK6KIAAAAJ&hl=it" target="_blank">Francesco Martinuzzi</a>, 
+                        <a href="https://scholar.google.com/citations?user=OzOUu8AAAAAJ&hl=en" target="_blank">Joseph Hart</a>,
+                        <a href="https://scholar.google.com/citations?user=-pHeI6oAAAAJ&hl=en" target="_blank">Francesco Sorrentino</a>
+                    </li>  
+                    <li>
+                        <i class="fa fa-calendar"></i> September 2025 - Present
+                    </li>
+                </ul>
+                <div class="block-title">
+                    <h3>Motivation</h3>
+                </div>
+                <p class="text-justify">
+                    Standard reservoir computers, while effective for modeling and prediction, struggle when used as standalone controllers for 
+                    closed-loop tracking. They treat all reservoir states equally and are typically trained to minimize prediction error rather 
+                    than tracking performance, which can lead to irrelevant or destabilizing dynamics and poor control behavior. This limitation 
+                    is critical for real-time control applications, where accurate and stable tracking is essential. In this research, we focused
+                     on development of a method that enable reservoir computers to directly generate reliable control inputs.
+                </p>
+                <div class="block-title">
+                    <h3>Results</h3>
+                </div>
+                <p class="text-justify">
+                     To address this limitation, we first integrated a lightweight attention mechanism into the reservoir computer and evaluated it on
+                     a prediction task. The results demonstrated that the attention-based nonlinear RC significantly outperforms the conventional 
+                     nonlinear RC in prediction accuracy. Building on this, we are now extending the attention-based RC for control applications. 
+                     The attention mechanism dynamically reweights reservoir states according to their relevance for minimizing tracking error, 
+                     suppressing destabilizing or irrelevant dynamics and adapting to changing system states. This enables the reservoir computer 
+                     to function as a pure controller, achieving accurate and stable closed-loop tracking while maintaining computational efficiency 
+                     suitable for real-time implementation.
+                    </p>
+                <!-- Software and Frameworks -->
+                <div class="tags-block">
+                    <div class="block-title">
+                        <h3>Software and Frameworks:</h3>
+                    </div>
+                    <ul class="tags">
+                        <li><a>MATLAB</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
