@@ -37,6 +37,23 @@
     }
     // /Portfolio subpage filters
 
+    // Course section filters (using existing portfolio grid)
+    $('#portfolio_filters_course').on("click", ".filter", function(e) {
+    e.preventDefault();
+
+    // Remove active class from old buttons
+    $('#portfolio_filters_course .filter').parent().removeClass('active');
+
+    // Add active class to clicked button
+    $(this).parent().addClass('active');
+
+    // Get the group name from data-group attribute
+    var group = $(this).attr('data-group');
+
+    // Apply shuffle filter on the existing grid
+    $('#portfolio_grid').shuffle('shuffle', group);
+    });
+
     // Contact form validator
     $(function () {
 
