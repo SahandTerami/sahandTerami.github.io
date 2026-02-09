@@ -1,0 +1,58 @@
+<div class="course-details">
+    <p>This course, <strong>Fuzzy Logic & Intelligent Control</strong>, explores the transition from binary logic to multi-valued reasoning, enabling the design of controllers that mimic human decision-making for complex, nonlinear, and ill-defined systems.</p>
+
+    <h4 style="color: #e74c3c; margin-top: 20px;">🧠 Fuzzy Set Theory & Linguistics:</h4>
+    <p style="font-size: 0.9em; color: #666;">Moving beyond the 0/1 crisp logic into the spectrum of partial truth.</p>
+    
+    
+
+    <ul style="line-height: 1.8;">
+        <li><strong>Membership Dynamics:</strong> Designing <strong>Membership Functions (MFs)</strong> including Triangular, Trapezoidal, and Gaussian profiles to define the "Degree of Membership."</li>
+        <li><strong>Fuzzification & Defuzzification:</strong> Mastering the conversion of real-world "Crisp" data into fuzzy labels and vice versa using methods like Centroid or Mean-of-Maximum.</li>
+    </ul>
+
+    <h4 style="color: #e74c3c; margin-top: 20px;">⚙️ Fuzzy Inference Systems (FIS):</h4>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+        <div style="background: #fff5f5; padding: 12px; border-radius: 8px; border: 1px solid #fed7d7;">
+            <strong style="color: #c53030;">Mamdani Model</strong>
+            <ul style="font-size: 0.85em; margin-top: 5px; padding-left: 20px;">
+                <li>Intuitive Linguistic Rule Bases</li>
+                <li>Ideal for Human-in-the-loop systems</li>
+                <li>Graphical Inference logic</li>
+            </ul>
+        </div>
+        <div style="background: #fff5f5; padding: 12px; border-radius: 8px; border: 1px solid #fed7d7;">
+            <strong style="color: #c53030;">Sugeno (TSK) Model</strong>
+            <ul style="font-size: 0.85em; margin-top: 5px; padding-left: 20px;">
+                <li>Mathematical/Functional Outputs</li>
+                <li>High Computational Efficiency</li>
+                <li>Optimized for Real-Time Control</li>
+            </ul>
+        </div>
+    </div>
+
+    <h4 style="color: #e74c3c; margin-top: 20px;">🚀 Advanced Control Implementation:</h4>
+    <p style="font-size: 0.9em; color: #666;">Designing IF-THEN rule bases for complex mechatronic systems.</p>
+
+    
+
+    <ul style="line-height: 1.8;">
+        <li><strong>Fuzzy PID Synthesis:</strong> Mapping error, delta-error, and integral-error to control surfaces through expert knowledge.</li>
+        <li><strong>Stability Frontiers:</strong> Analyzing nonlinear stability via <strong>Lyapunov-based methods</strong> and Takagi-Sugeno linearization.</li>
+    </ul>
+
+    <div style="background: #fff5f5; border-left: 4px solid #e74c3c; padding: 15px; margin-top: 20px; border-radius: 0 8px 8px 0;">
+        <h4 style="margin-top: 0; color: #333;">🏎️ Autonomous Systems Lab (MATLAB):</h4>
+        <p style="font-size: 0.95em; margin-bottom: 0;">
+            • <strong>Autonomous Valet Parking:</strong> Designed a fuzzy-logic-based path planner and controller for self-parking vehicles in constrained environments.<br>
+            • <strong>Inverted Pendulum Stabilization:</strong> Implemented a robust fuzzy controller to maintain vertical stability of an inverted pendulum under periodic external disturbances.
+        </p>
+    </div>
+
+    <div style="margin-top: 15px;">
+        <span style="background: #f0f0f0; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; color: #555; margin-right: 5px;">Autonomous Parking</span>
+        <span style="background: #f0f0f0; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; color: #555; margin-right: 5px;">FIS (Mamdani/Sugeno)</span>
+        <span style="background: #f0f0f0; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; color: #555; margin-right: 5px;">Inverted Pendulum</span>
+        <span style="background: #f0f0f0; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; color: #555;">Intelligent Control</span>
+    </div>
+</div>
