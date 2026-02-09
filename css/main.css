@@ -1453,57 +1453,97 @@ ul.social-links li:last-child a {
 /* =======================================
 7.6. Contact subpage
 ======================================= */
+/* Individual Course Item in the List */
 .course-item {
-    padding: 12px;
-    margin-bottom: 10px;
+    padding: 15px;
+    margin-bottom: 12px;
     background: #fdfdfd;
-    border-left: 3px solid #e74c3c; 
+    border-left: 4px solid #e74c3c; 
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     font-weight: 500;
     color: #333;
+    border-radius: 0 4px 4px 0;
 }
 
 .course-item:hover {
     background: #e74c3c;
     color: white;
-    padding-left: 20px;
+    padding-left: 25px;
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.2);
 }
 
+/* Modal Overlay (Background Dim) */
 .custom-modal-overlay {
-    display: none; /* Controlled by JS */
+    display: none; 
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 9999;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px); /* Modern blur effect */
 }
 
+/* Wide Modal Card */
 .custom-modal-card {
     background: white;
-    padding: 30px;
-    border-radius: 12px;
+    padding: 40px;
+    border-radius: 16px;
     width: 90%;
-    max-width: 750px;
+    max-width: 900px; /* Increased width */
     position: relative;
-    animation: modalSlideUp 0.4s ease;
+    max-height: 85vh; /* Prevents card from going off-screen */
+    overflow-y: auto; /* Internal scroll for long text */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    animation: modalSlideUp 0.4s ease-out;
 }
 
-@keyframes modalSlideUp {
-    from { opacity: 0; transform: translateY(50px); }
-    to { opacity: 1; transform: translateY(0); }
+/* Custom Scrollbar for a cleaner look */
+.custom-modal-card::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-modal-card::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.custom-modal-card::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+.custom-modal-card::-webkit-scrollbar-thumb:hover {
+    background: #e74c3c;
 }
 
+/* Close Button (X) */
 .close-modal {
     position: absolute;
-    top: 15px; right: 20px;
-    font-size: 28px;
+    top: 20px; 
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #999;
     cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s, transform 0.2s;
 }
 
+.close-modal:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes modalSlideUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
 
 
 /* ============================================================================= 
