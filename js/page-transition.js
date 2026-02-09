@@ -52,7 +52,7 @@ var PageTransitions = (function ($) {
 
         var href = $('#portfolio_grid_course figure a').each(function(){
             href = $(this).attr('href');
-            if(hash=='portfolio' + '/' + href.substr(0,href.length-5)){
+            if(hash=='course' + '/' + href.substr(0,href.length-5)){
                 var toLoad =  $(this).attr('href');
                 showContent();
                 ajaxLoadedContent.load(toLoad);
@@ -63,7 +63,7 @@ var PageTransitions = (function ($) {
         // Show Portfolio item
         $('.subpages .ajax-page-load-course').click(function(){
             var toLoad = $(this).attr('href');
-            window.location.hash = 'portfolio' + '/' + $(this).attr('href').substr(0,$(this).attr('href').length-5);
+            window.location.hash = 'course' + '/' + $(this).attr('href').substr(0,$(this).attr('href').length-5);
             return false;
         });
     }
