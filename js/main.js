@@ -4,7 +4,6 @@
 * Author URL: http://themeforest.net/user/lmpixels
 * Version: 2.2
 */
-console.log("Main.js has been loaded successfully!");
 (function($) {
 "use strict";
     
