@@ -1,5 +1,5 @@
 <div class="course-details">
-    <p>This course, <strong>Optimal & Stochastic Control (Control 2)</strong>, advances into the realm of optimal synthesis, focusing on minimizing cost functions and managing stochastic uncertainties in both continuous and discrete-time domains.</p>
+    <p>This course, <strong>Modern Control 2(Optimal & Stochastic Control)</strong>, advances into the realm of optimal synthesis, focusing on minimizing cost functions and managing stochastic uncertainties in both continuous and discrete-time domains.</p>
 
     <h4 style="color: #e74c3c; margin-top: 20px;">💎 Optimal Control & LQR/LQG:</h4>
     <p style="font-size: 0.9em; color: #666;">Designing controllers that balance performance precision with control effort.</p>
