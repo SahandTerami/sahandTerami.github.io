@@ -36,36 +36,6 @@
         }
     }
     // /Portfolio subpage filters
-
-
-    // Portfolio subpage filters
-    function courses_init() {
-        var portfolio_grid_course = $('#portfolio_grid_course'),
-            portfolio_filters_course = $('#portfolio_filters_course');
-            
-        if (portfolio_grid_course) {
-
-            portfolio_grid_course.shuffle({
-                speed: 450,
-                itemSelector: 'figure'
-            });
-
-            $('.site-main-menu').on("click", "a", function (e) {
-                portfolio_grid_course.shuffle('update');
-            });
-
-
-            portfolio_filters_course.on("click", ".filter", function (e) {
-                portfolio_grid_course.shuffle('update');
-                e.preventDefault();
-                $('#portfolio_filters_course .filter').parent().removeClass('active');
-                $(this).parent().addClass('active');
-                portfolio_grid_course.shuffle('shuffle', $(this).attr('data-group') );
-            });
-
-        }
-    }
-    // /Portfolio subpage filters
     // Contact form validator
     $(function () {
 
@@ -156,19 +126,9 @@
             portfolio_init(this);
         });
 
-        // Initialize Courses grid
-        var $courses_container = $("#portfolio_grid_course");
-        
-        $courses_container.imagesLoaded(function () {
-            courses_init(); 
-        });
-
         
         // Portfolio hover effect init
         $(' #portfolio_grid > figure > a ').each( function() { $(this).hoverdir(); } );
-
-        // Courses hover effect init
-        $(' #portfolio_grid_course > figure > a').each(function() { $(this).hoverdir();} );
 
         // Mobile menu
         $('.menu-toggle').click(function() { 
@@ -259,6 +219,76 @@
 
     });
 
+    // State management using a Boolean
+let isModalOpen = false;
+
+/**
+ * Main function to fetch external HTML and show it in the modal
+ * @param {string} title - The title of the course
+ * @param {string} filePath - Path to the specific .html file
+ */
+async function loadCourseData(title, filePath) {
+    const modal = document.getElementById('courseModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBody = document.getElementById('modalBody');
+
+    // Start loading state
+    modalBody.innerHTML = "Loading details...";
+    modalTitle.innerText = title;
+
+    try {
+        // Fetching the content from the external file
+        const response = await fetch(filePath);
+        
+        if (!response.ok) {
+            throw new Error('Could not find the file');
+        }
+
+        const data = await response.text();
+        
+        // Injecting the content into the modal body
+        modalBody.innerHTML = data;
+        
+        // Set the boolean state to true and show modal
+        isModalOpen = true;
+        toggleDisplay(true);
+
+    } catch (error) {
+        modalBody.innerHTML = "<p style='color:red;'>Error loading details. Please check the file path.</p>";
+        toggleDisplay(true);
+        console.error("Fetch error:", error);
+    }
+}
+
+/**
+ * Handles the visibility of the modal
+ * @param {boolean} show - Whether to show or hide
+ */
+function toggleDisplay(show) {
+    const modal = document.getElementById('courseModal');
+    if (show) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    } else {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+        isModalOpen = false;
+    }
+}
+
+// Function called by the close button (X)
+function closeModal() {
+    toggleDisplay(false);
+}
+
+// Close modal if user clicks anywhere outside the white card
+window.onclick = function(event) {
+    const modal = document.getElementById('courseModal');
+    if (event.target == modal) {
+        closeModal();
+    }
+};
+    
     // Mobile menu hide
     $(window).on('resize', function() {
          mobileMenuHide();
