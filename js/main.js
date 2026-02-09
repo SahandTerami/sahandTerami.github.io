@@ -37,29 +37,35 @@
     }
     // /Portfolio subpage filters
 
-    // Initialize Courses grid
-$('#portfolio_grid_course').shuffle({
-    speed: 450,
-    itemSelector: 'figure'
-});
 
-// Courses filter
-$('#portfolio_filters_course').on("click", ".filter", function(e) {
-    e.preventDefault();
+    // Portfolio subpage filters
+    function courses_init() {
+        var portfolio_grid_course = $('#portfolio_grid_course'),
+            portfolio_filters_course = $('#portfolio_filters_course');
+            
+        if (portfolio_grid_course) {
 
-    // Remove active class from old buttons
-    $('#portfolio_filters_course .filter').parent().removeClass('active');
+            portfolio_grid_course.shuffle({
+                speed: 450,
+                itemSelector: 'figure'
+            });
 
-    // Add active class to clicked button
-    $(this).parent().addClass('active');
+            $('.site-main-menu').on("click", "a", function (e) {
+                portfolio_grid_course.shuffle('update');
+            });
 
-    // Get the group name from data-group attribute
-    var group = $(this).attr('data-group');
 
-    // Apply shuffle filter on the Courses grid
-    $('#portfolio_grid_course').shuffle('shuffle', group);
-});
+            portfolio_filters_course.on("click", ".filter", function (e) {
+                portfolio_grid_course.shuffle('update');
+                e.preventDefault();
+                $('#portfolio_filters_course .filter').parent().removeClass('active');
+                $(this).parent().addClass('active');
+                portfolio_grid_course.shuffle('shuffle', $(this).attr('data-group') );
+            });
 
+        }
+    }
+    // /Portfolio subpage filters
     // Contact form validator
     $(function () {
 
@@ -150,8 +156,19 @@ $('#portfolio_filters_course').on("click", ".filter", function(e) {
             portfolio_init(this);
         });
 
+        // Initialize Courses grid
+        var $courses_container = $("#portfolio_grid_course");
+        
+        $courses_container.imagesLoaded(function () {
+            courses_init(); 
+        });
+
+        
         // Portfolio hover effect init
         $(' #portfolio_grid > figure > a ').each( function() { $(this).hoverdir(); } );
+
+        // Courses hover effect init
+        $(' #portfolio_grid_course > figure > a').each(function() { $(this).hoverdir();} );
 
         // Mobile menu
         $('.menu-toggle').click(function() { 
