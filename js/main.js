@@ -218,73 +218,78 @@
 
     });
 
-    // State management using a Boolean
-let isModalOpen = false;
+// State management for the modal process
+window.isModalOpen = false;
 
 /**
- * Main function to fetch external HTML and show it in the modal
- * @param {string} title - The title of the course
- * @param {string} filePath - Path to the specific .html file
+ * Main function to fetch external HTML content and display it inside the modal
+ * @param {string} title - The title to be displayed in the modal header
+ * @param {string} filePath - Path to the external .html file
  */
-async function loadCourseData(title, filePath) {
+window.loadCourseData = async function(title, filePath) {
     const modal = document.getElementById('courseModal');
     const modalTitle = document.getElementById('modalTitle');
     const modalBody = document.getElementById('modalBody');
 
-    // Start loading state
-    modalBody.innerHTML = "Loading details...";
-    modalTitle.innerText = title;
+    // Show loading state to the user
+    if (modalBody) modalBody.innerHTML = "Loading details...";
+    if (modalTitle) modalTitle.innerText = title;
 
     try {
-        // Fetching the content from the external file
+        // Fetch content from the specified HTML file
         const response = await fetch(filePath);
         
         if (!response.ok) {
-            throw new Error('Could not find the file');
+            throw new Error('Could not find the file: ' + filePath);
         }
 
         const data = await response.text();
         
-        // Injecting the content into the modal body
-        modalBody.innerHTML = data;
+        // Inject the fetched HTML content into the modal body
+        if (modalBody) modalBody.innerHTML = data;
         
-        // Set the boolean state to true and show modal
-        isModalOpen = true;
-        toggleDisplay(true);
+        // Update state and display the modal
+        window.isModalOpen = true;
+        window.toggleDisplay(true);
 
     } catch (error) {
-        modalBody.innerHTML = "<p style='color:red;'>Error loading details. Please check the file path.</p>";
-        toggleDisplay(true);
+        // Display error message in the modal body if fetch fails
+        if (modalBody) {
+            modalBody.innerHTML = "<p style='color:red;'>Error loading details. Please check the file path.</p>";
+        }
+        window.toggleDisplay(true);
         console.error("Fetch error:", error);
     }
 }
 
 /**
- * Handles the visibility of the modal
- * @param {boolean} show - Whether to show or hide
+ * Handles the modal visibility and background scroll locking
+ * @param {boolean} show - Toggle visibility (true for show, false for hide)
  */
-function toggleDisplay(show) {
+window.toggleDisplay = function(show) {
     const modal = document.getElementById('courseModal');
-    if (show) {
-        modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden'; // Prevent background scrolling
-    } else {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto'; // Re-enable scrolling
-        isModalOpen = false;
+    if (modal) {
+        modal.style.display = show ? 'flex' : 'none';
+        // Prevent background scrolling when modal is active
+        document.body.style.overflow = show ? 'hidden' : 'auto';
+        if (!show) window.isModalOpen = false;
     }
 }
 
-// Function called by the close button (X)
-function closeModal() {
-    toggleDisplay(false);
+/**
+ * Closes the modal; triggered by the close button (X)
+ */
+window.closeModal = function() {
+    window.toggleDisplay(false);
 }
 
-// Close modal if user clicks anywhere outside the white card
+/**
+ * Close modal if the user clicks anywhere outside the modal content card
+ */
 window.onclick = function(event) {
     const modal = document.getElementById('courseModal');
     if (event.target == modal) {
-        closeModal();
+        window.closeModal();
     }
 };
     
