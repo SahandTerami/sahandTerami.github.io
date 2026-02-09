@@ -1,0 +1,54 @@
+<div class="course-details">
+    <p>This course, <strong>Advanced Dynamics</strong>, provides a rigorous analytical framework for modeling the complex motion of multi-body systems, moving beyond Newtonian mechanics into <strong>Lagrangian</strong> and <strong>Hamiltonian</strong> formalisms.</p>
+
+    <h4 style="color: #e74c3c; margin-top: 20px;">📜 Analytical Mechanics & Constraint Theory:</h4>
+    <p style="font-size: 0.9em; color: #666;">Establishing the governing principles for systems where F=ma is insufficient.</p>
+
+    
+
+    <ul style="line-height: 1.8;">
+        <li><strong>Generalized Coordinates:</strong> Defining degrees of freedom (DoF) and work-energy relations through <strong>Virtual Work</strong>.</li>
+        <li><strong>Constraint Analysis:</strong> Handling <strong>Holonomic</strong> and <strong>Non-Holonomic</strong> constraints in kinematic chains.</li>
+        <li><strong>Lagrangian Mechanics:</strong> Deriving equations of motion using Kinetic and Potential energy functionals (Lagrange’s 1st and 2nd kind).</li>
+    </ul>
+
+    <h4 style="color: #e74c3c; margin-top: 20px;">🌀 Hamiltonian Systems & Nonlinear Phenomena:</h4>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+        <div style="background: #fff5f5; padding: 12px; border-radius: 8px; border: 1px solid #fed7d7;">
+            <strong style="color: #c53030;">Hamiltonian Formalism</strong>
+            <ul style="font-size: 0.85em; margin-top: 5px; padding-left: 20px;">
+                <li>Phase Space Analysis</li>
+                <li>Canonical Coordinates</li>
+                <li>Conservation & Symmetry</li>
+                <li>Hamilton’s Equations</li>
+            </ul>
+        </div>
+        <div style="background: #fff5f5; padding: 12px; border-radius: 8px; border: 1px solid #fed7d7;">
+            <strong style="color: #c53030;">Nonlinear Behavior</strong>
+            <ul style="font-size: 0.85em; margin-top: 5px; padding-left: 20px;">
+                <li>Equilibrium & Linearization</li>
+                <li>Bifurcation & Chaos Theory</li>
+                <li>Orbital Stability</li>
+                <li>Multiple Equilibrium Points</li>
+            </ul>
+        </div>
+    </div>
+
+    <h4 style="color: #e74c3c; margin-top: 20px;">🤖 Multibody Systems & Advanced Vibrations:</h4>
+    <p style="font-size: 0.9em; color: #666;">Applying dynamic principles to robotics, vehicles, and structural oscillations.</p>
+
+    
+
+    <ul style="line-height: 1.8;">
+        <li><strong>Multibody Dynamics (MBD):</strong> Modeling interconnected rigid bodies and kinematic chains for <strong>Robotics</strong> and <strong>Biomechanics</strong>.</li>
+        <li><strong>Perturbation Methods:</strong> Solving nonlinear oscillations using Multiple Scales, Averaging, and Perturbation techniques.</li>
+        <li><strong>Numerical Integration:</strong> Evaluating solver efficiency (Runge-Kutta, Implicit schemes) for <strong>Stiff</strong> dynamic equations.</li>
+    </ul>
+
+    <div style="margin-top: 15px;">
+        <span style="background: #f0f0f0; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; color: #555; margin-right: 5px;">Lagrangian Mechanics</span>
+        <span style="background: #f0f0f0; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; color: #555; margin-right: 5px;">Multibody Dynamics</span>
+        <span style="background: #f0f0f0; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; color: #555; margin-right: 5px;">Nonlinear Oscillations</span>
+        <span style="background: #f0f0f0; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; color: #555;">Phase Space</span>
+    </div>
+</div>
