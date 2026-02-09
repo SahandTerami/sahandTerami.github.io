@@ -32,38 +32,38 @@ var PageTransitions = (function ($) {
             ajaxLoadedContent.show();
             ajaxLoadedContent.addClass('fadeInLeft');
         }
-
-        var href = $('#portfolio_grid figure a').each(function(){
-            href = $(this).attr('href');
-            if(hash=='portfolio' + '/' + href.substr(0,href.length-5)){
-                var toLoad =  $(this).attr('href');
+        ////////////////////////////////////////////////////////
+        $('#portfolio_grid_course figure a').each(function () {
+            var href = $(this).attr('href').replace('.html', '');
+        
+            if (hash === 'course/' + href) {
                 showContent();
-                ajaxLoadedContent.load(toLoad);
-                return false;
-            } 
+                ajaxLoadedContent.load($(this).attr('href'));
+                return false; 
+            }
         });
         
-        // Show Portfolio item
-        $('.subpages .ajax-page-load').click(function(){
-            var toLoad = $(this).attr('href');
-            window.location.hash = 'portfolio' + '/' + $(this).attr('href').substr(0,$(this).attr('href').length-5);
+        // Show Course item
+        $('.subpages .ajax-page-load-course').click(function () {
+            var href = $(this).attr('href').replace('.html', '');
+            window.location.hash = 'course/' + href;
             return false;
         });
-
-        var href = $('#portfolio_grid_course figure a').each(function(){
-            href = $(this).attr('href');
-            if(hash=='course' + '/' + href.substr(0,href.length-5)){
-                var toLoad =  $(this).attr('href');
+        /////////////////////////////////////
+        $('#portfolio_grid figure a').each(function () {
+            var href = $(this).attr('href').replace('.html', '');
+            if (hash === 'portfolio/' + href) {
                 showContent();
-                ajaxLoadedContent.load(toLoad);
+                ajaxLoadedContent.load($(this).attr('href'));
                 return false;
-            } 
+            }
         });
+
         
         // Show Portfolio item
-        $('.subpages .ajax-page-load-course').click(function(){
-            var toLoad = $(this).attr('href');
-            window.location.hash = 'course' + '/' + $(this).attr('href').substr(0,$(this).attr('href').length-5);
+        $('.subpages .ajax-page-load').click(function () {
+            var href = $(this).attr('href').replace('.html', '');
+            window.location.hash = 'portfolio/' + href;
             return false;
         });
     }
