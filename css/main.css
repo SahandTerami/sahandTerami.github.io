@@ -1457,7 +1457,7 @@ ul.social-links li:last-child a {
     padding: 12px;
     margin-bottom: 10px;
     background: #fdfdfd;
-    border-left: 3px solid #ff9800; 
+    border-left: 3px solid #e74c3c; 
     cursor: pointer;
     transition: 0.3s;
     font-weight: 500;
@@ -1465,7 +1465,7 @@ ul.social-links li:last-child a {
 }
 
 .course-item:hover {
-    background: #ff9800;
+    background: #e74c3c;
     color: white;
     padding-left: 20px;
 }
