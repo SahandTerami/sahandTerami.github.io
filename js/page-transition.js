@@ -22,52 +22,51 @@ var PageTransitions = (function ($) {
         // support css animations
         support = Modernizr.cssanimations;
 
-    function ajaxLoader() {
-    var hash = location.hash.substr(1);
-    var ajaxLoadedContent = $('#page-ajax-loaded');
-
-    function showContent() {
-        ajaxLoadedContent.removeClass('fadeOutLeft');
-        ajaxLoadedContent.show();
-        ajaxLoadedContent.addClass('fadeInLeft');
-    }
-
-    // Load Portfolio item based on hash
-    $('#portfolio_grid figure a').each(function() {
-        var href = $(this).attr('href');
-        if (hash === 'portfolio/' + href.substr(0, href.length - 5)) {
-            var toLoad = href;
-            showContent();
-            ajaxLoadedContent.load(toLoad);
-            return false;
+        function ajaxLoader() {
+            // Check for hash value in URL
+            var hash = location.hash.substr(1);
+            var ajaxLoadedContent = $('#page-ajax-loaded');
+    
+            function showContent() {
+                ajaxLoadedContent.removeClass('fadeOutLeft');
+                ajaxLoadedContent.show();
+                ajaxLoadedContent.addClass('fadeInLeft');
+            }
+    
+            var href = $('#portfolio_grid figure a').each(function(){
+                href = $(this).attr('href');
+                if(hash=='portfolio' + '/' + href.substr(0,href.length-5)){
+                    var toLoad =  $(this).attr('href');
+                    showContent();
+                    ajaxLoadedContent.load(toLoad);
+                    return false;
+                } 
+            });
+            
+            // Show Portfolio item
+            $('.subpages .ajax-page-load').click(function(){
+                var toLoad = $(this).attr('href');
+                window.location.hash = 'portfolio' + '/' + $(this).attr('href').substr(0,$(this).attr('href').length-5);
+                return false;
+            });
+    
+            var href = $('#portfolio_grid_course figure a').each(function(){
+                href = $(this).attr('href');
+                if(hash=='course' + '/' + href.substr(0,href.length-5)){
+                    var toLoad =  $(this).attr('href');
+                    showContent();
+                    ajaxLoadedContent.load(toLoad);
+                    return false;
+                } 
+            });
+            
+            // Show Portfolio item
+            $('.subpages .ajax-page-load-course').click(function(){
+                var toLoad = $(this).attr('href');
+                window.location.hash = 'course' + '/' + $(this).attr('href').substr(0,$(this).attr('href').length-5);
+                return false;
+            });
         }
-    });
-
-    // Click handler for Portfolio items
-    $('.subpages .ajax-page-load').click(function() {
-        var toLoad = $(this).attr('href');
-        window.location.hash = 'portfolio/' + toLoad.substr(0, toLoad.length - 5);
-        return false;
-    });
-
-    // Load Course item based on hash
-    $('#portfolio_grid_course figure a').each(function() {
-        var href = $(this).attr('href');
-        if (hash === 'course/' + href.substr(0, href.length - 5)) {
-            var toLoad = href;
-            showContent();
-            ajaxLoadedContent.load(toLoad);
-            return false;
-        }
-    });
-
-    // Click handler for Course items
-    $('.subpages .ajax-page-load-course').click(function() {
-        var toLoad = $(this).attr('href');
-        window.location.hash = 'course/' + toLoad.substr(0, toLoad.length - 5);
-        return false;
-    });
-}
 
 
 
