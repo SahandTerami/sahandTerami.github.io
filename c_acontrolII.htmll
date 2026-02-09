@@ -1,0 +1,52 @@
+<div class="course-details">
+    <p>This course, <strong>Optimal & Stochastic Control (Control 2)</strong>, advances into the realm of optimal synthesis, focusing on minimizing cost functions and managing stochastic uncertainties in both continuous and discrete-time domains.</p>
+
+    <h4 style="color: #e74c3c; margin-top: 20px;">💎 Optimal Control & LQR/LQG:</h4>
+    <p style="font-size: 0.9em; color: #666;">Designing controllers that balance performance precision with control effort.</p>
+    
+    
+
+    <ul style="line-height: 1.8;">
+        <li><strong>LQR (Linear Quadratic Regulator):</strong> Formulating and solving the Algebraic Riccati Equation (ARE) for optimal state feedback.</li>
+        <li><strong>LQG (Linear Quadratic Gaussian):</strong> Combining LQR with optimal estimation to handle systems with Gaussian white noise.</li>
+        <li><strong>Stochastic Systems:</strong> Analyzing the impact of process and measurement noise on closed-loop stability and performance.</li>
+    </ul>
+
+    <h4 style="color: #e74c3c; margin-top: 20px;">📡 Optimal Estimation & Frontiers:</h4>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+        <div style="background: #fff5f5; padding: 12px; border-radius: 8px; border: 1px solid #fed7d7;">
+            <strong style="color: #c53030;">Kalman Filtering</strong>
+            <ul style="font-size: 0.85em; margin-top: 5px; padding-left: 20px;">
+                <li>Discrete & Continuous Kalman Filters</li>
+                <li>Optimal State Estimation</li>
+                <li>Covariance Matrix Tuning</li>
+                <li>Noise Rejection Strategies</li>
+            </ul>
+        </div>
+        <div style="background: #fff5f5; padding: 12px; border-radius: 8px; border: 1px solid #fed7d7;">
+            <strong style="color: #c53030;">Advanced Paradigms</strong>
+            <ul style="font-size: 0.85em; margin-top: 5px; padding-left: 20px;">
+                <li>Introduction to Robust Control</li>
+                <li>Nonlinear Control Foundations</li>
+                <li>Loop Transfer Recovery (LTR)</li>
+                <li>Discrete-time System Optimization</li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="background: #fff5f5; border-left: 4px solid #e74c3c; padding: 15px; margin-top: 20px; border-radius: 0 8px 8px 0;">
+        <h4 style="margin-top: 0; color: #333;">🏎️ MATLAB Simulation Case Studies:</h4>
+        <p style="font-size: 0.95em; margin-bottom: 0;">
+            Developed high-performance controllers and estimators for: <br>
+            • <strong>Active Suspension Systems:</strong> Using LQG to minimize passenger discomfort under stochastic road profiles.<br>
+            • <strong>Vehicle Lateral Dynamics:</strong> Implementing Kalman Filters to estimate states under sensor noise for stable path tracking.
+        </p>
+    </div>
+
+    <div style="margin-top: 15px;">
+        <span style="background: #f0f0f0; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; color: #555; margin-right: 5px;">LQR/LQG</span>
+        <span style="background: #f0f0f0; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; color: #555; margin-right: 5px;">Kalman Filter</span>
+        <span style="background: #f0f0f0; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; color: #555; margin-right: 5px;">Optimal Control</span>
+        <span style="background: #f0f0f0; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; color: #555;">Stochastic Systems</span>
+    </div>
+</div>
