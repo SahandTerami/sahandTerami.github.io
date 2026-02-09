@@ -22,51 +22,58 @@ var PageTransitions = (function ($) {
         // support css animations
         support = Modernizr.cssanimations;
 
-    function ajaxLoader() {
-        // Check for hash value in URL
-        var hash = location.hash.substr(1);
-        var ajaxLoadedContent = $('#page-ajax-loaded');
+    function ajaxLoaderPortfolio() {
+    var hash = location.hash.substr(1);
+    var ajaxLoadedContent = $('#page-ajax-loaded');
 
-        function showContent() {
-            ajaxLoadedContent.removeClass('fadeOutLeft');
-            ajaxLoadedContent.show();
-            ajaxLoadedContent.addClass('fadeInLeft');
-        }
-        ////////////////////////////////////////////////////////
-        $('#portfolio_grid_course figure a').each(function () {
-            var href = $(this).attr('href').replace('.html', '');
-        
-            if (hash === 'course/' + href) {
-                showContent();
-                ajaxLoadedContent.load($(this).attr('href'));
-                return false; 
-            }
-        });
-        
-        // Show Course item
-        $('.subpages .ajax-page-load-course').click(function () {
-            var href = $(this).attr('href').replace('.html', '');
-            window.location.hash = 'course/' + href;
-            return false;
-        });
-        /////////////////////////////////////
-        $('#portfolio_grid figure a').each(function () {
-            var href = $(this).attr('href').replace('.html', '');
-            if (hash === 'portfolio/' + href) {
-                showContent();
-                ajaxLoadedContent.load($(this).attr('href'));
-                return false;
-            }
-        });
-
-        
-        // Show Portfolio item
-        $('.subpages .ajax-page-load').click(function () {
-            var href = $(this).attr('href').replace('.html', '');
-            window.location.hash = 'portfolio/' + href;
-            return false;
-        });
+    function showContent() {
+        ajaxLoadedContent.removeClass('fadeOutLeft').show().addClass('fadeInLeft');
     }
+
+    // Load portfolio items
+    $('#portfolio_grid figure a').each(function(){
+        var href = $(this).attr('href').replace('.html','');
+        if(hash === 'portfolio/' + href){
+            showContent();
+            ajaxLoadedContent.load($(this).attr('href'));
+            return false;
+        }
+    });
+
+    // Click handler for portfolio
+    $('.subpages .ajax-page-load').click(function(){
+        var href = $(this).attr('href').replace('.html','');
+        window.location.hash = 'portfolio/' + href;
+        return false;
+    });
+}
+
+function ajaxLoaderCourse() {
+    var hash = location.hash.substr(1);
+    var ajaxLoadedContent = $('#page-ajax-loaded');
+
+    function showContent() {
+        ajaxLoadedContent.removeClass('fadeOutLeft').show().addClass('fadeInLeft');
+    }
+
+    // Load course items
+    $('#portfolio_grid_course figure a').each(function(){
+        var href = $(this).attr('href').replace('.html','');
+        if(hash === 'course/' + href){
+            showContent();
+            ajaxLoadedContent.load($(this).attr('href'));
+            return false;
+        }
+    });
+
+    // Click handler for course
+    $('.subpages .ajax-page-load-course').click(function(){
+        var href = $(this).attr('href').replace('.html','');
+        window.location.hash = 'course/' + href;
+        return false;
+    });
+}
+
 
     
     function init(options) {
@@ -94,24 +101,37 @@ var PageTransitions = (function ($) {
             $('.pt-wrapper').animate({scrollTop:0},300);
         });
 
-        window.onhashchange = function(event) {
-            if(location.hash) {
-                $(menu+' li').removeClass('active');
-                var menuLink = $(menu+' a[href*="'+location.hash.split('/')[0]+'"]'),
-                    navLink = menuLink['0'];
-                navLink = $(navLink.parentNode);
-                navLink.addClass('active');
+       window.onhashchange = function(event) {
+    if(location.hash) {
+        // Remove active class from all menu items
+        $(menu+' li').removeClass('active');
 
-                Animate(menuLink);
+        // Find the menu link that matches the hash (before the slash)
+        var hashBase = location.hash.split('/')[0];
+        var menuLink = $(menu+' a[href*="'+hashBase+'"]'),
+            navLink = menuLink[0];
+        navLink = $(navLink.parentNode);
+        navLink.addClass('active');
 
-                $('.pt-wrapper').animate({scrollTop:0},300);
+        // Animate the page transition
+        Animate(menuLink);
 
-                $('#page-ajax-loaded').addClass('fadeOutLeft');
-                $('#page-ajax-loaded > div').detach();
+        // Scroll wrapper to top
+        $('.pt-wrapper').animate({scrollTop:0},300);
 
-                ajaxLoader();
-            }
-        };
+        // Hide previous ajax content
+        $('#page-ajax-loaded').addClass('fadeOutLeft');
+        $('#page-ajax-loaded > div').detach();
+
+        // Call the correct ajax loader based on hash
+        if(hashBase === '#portfolio') {
+            ajaxLoaderPortfolio();
+        } else if(hashBase === '#course') {
+            ajaxLoaderCourse();
+        }
+    }
+};
+
 
         var menu = options.menu,
         pageStart = getActivePage();
