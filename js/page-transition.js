@@ -102,35 +102,25 @@ function ajaxLoaderCourse() {
         });
 
        window.onhashchange = function(event) {
-    if(location.hash) {
-        // Remove active class from all menu items
-        $(menu+' li').removeClass('active');
-
-        // Find the menu link that matches the hash (before the slash)
-        var hashBase = location.hash.split('/')[0];
-        var menuLink = $(menu+' a[href*="'+hashBase+'"]'),
-            navLink = menuLink[0];
-        navLink = $(navLink.parentNode);
-        navLink.addClass('active');
-
-        // Animate the page transition
-        Animate(menuLink);
-
-        // Scroll wrapper to top
-        $('.pt-wrapper').animate({scrollTop:0},300);
-
-        // Hide previous ajax content
-        $('#page-ajax-loaded').addClass('fadeOutLeft');
-        $('#page-ajax-loaded > div').detach();
-
-        // Call the correct ajax loader based on hash
-        if(hashBase === '#portfolio') {
-            ajaxLoaderPortfolio();
-        } else if(hashBase === '#course') {
-            ajaxLoaderCourse();
+        if (location.hash) {
+            $(menu + ' li').removeClass('active');
+    
+            var menuLink = $(menu + ' a[href*="' + location.hash.split('/')[0] + '"]'),
+                navLink = menuLink[0];
+            navLink = $(navLink.parentNode);
+    
+            navLink.addClass('active');
+            Animate(menuLink);
+    
+            $('.pt-wrapper').animate({ scrollTop: 0 }, 300);
+    
+            $('#page-ajax-loaded').addClass('fadeOutLeft');
+            $('#page-ajax-loaded > div').detach();
+    
+            ajaxLoader();
         }
-    }
-};
+    };
+
 
 
         var menu = options.menu,
