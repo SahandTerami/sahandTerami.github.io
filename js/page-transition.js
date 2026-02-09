@@ -68,7 +68,35 @@ var PageTransitions = (function ($) {
             });
         }
 
-
+        function ajaxLoaderCourse() {
+            // Check for hash value in URL
+            var hashcourse = location.hashcourse.substr(1);
+            var ajaxLoadedCourseContent = $('#page-ajax-loaded');
+    
+            function showContentCourse() {
+                ajaxLoadedCourseContent.removeClass('fadeOutLeft');
+                ajaxLoadedCourseContent.show();
+                ajaxLoadedCourseContent.addClass('fadeInLeft');
+            }
+            });
+    
+            var hrefcourse = $('#portfolio_grid_course figure a').each(function(){
+                hrefcourse = $(this).attr('hrefcourse');
+                if(hashcourse=='course' + '/' + hrefcourse.substr(0,hrefcourse.length-5)){
+                    var toLoadcourse =  $(this).attr('hrefcourse');
+                    showContentCourse();
+                    ajaxLoadedCourseContent.load(toLoadcourse);
+                    return false;
+                } 
+            });
+            
+            // Show Portfolio item
+            $('.subpages .ajax-page-load-course').click(function(){
+                var toLoadcourse = $(this).attr('hrefcourse');
+                window.location.hashcourse = 'course' + '/' + $(this).attr('hrefcourse').substr(0,$(this).attr('hrefcourse').length-5);
+                return false;
+            });
+        }
 
     
     function init(options) {
@@ -115,9 +143,7 @@ var PageTransitions = (function ($) {
             ajaxLoader();
         }
     };
-
-
-
+        
         var menu = options.menu,
         pageStart = getActivePage();
 
@@ -135,7 +161,6 @@ var PageTransitions = (function ($) {
             Animate(menuLink);
         }
 
-
         $('#page').append('<div id="page-ajax-loaded" class="page-ajax-loaded animated fadeInLeft"></div>');
         ajaxLoader();
 
@@ -143,12 +168,70 @@ var PageTransitions = (function ($) {
             $('#page-ajax-loaded').addClass('fadeOutLeft');
             $('#page-ajax-loaded > div').detach();
         });
+
+                   window.onhashchange = function(event) {
+            if (location.hashcourse) {
+                $(menu + ' li').removeClass('active');
+        
+                var menuLink = $(menu + ' a[hrefcourse*="' + location.hashcourse.split('/')[0] + '"]'),
+                    navLink = menuLink[0];
+                navLink = $(navLink.parentNode);
+        
+                navLink.addClass('active');
+                Animate(menuLink);
+        
+                $('.pt-wrapper').animate({ scrollTop: 0 }, 300);
+        
+                $('#page-ajax-loaded-course').addClass('fadeOutLeft');
+                $('#page-ajax-loaded-course > div').detach();
+        
+                ajaxLoaderCourse();
+        }
+    };
+
+        pageStart = getActivePagecourse();
+
+        if (location.hashcourse === "") {
+            location.hashcourse = pageStart;
+            var menuLink = $(menu+' a[hrefcourse*="'+location.hashcourse.split('/')[0]+'"]'),
+                navLink = menuLink['0'];
+            navLink = $(navLink.parentNode);
+            navLink.addClass('active');
+        } else {
+            var menuLink = $(menu+' a[href*="'+pageStart+'"]'),
+                navLink = menuLink['0'];
+            navLink = $(navLink.parentNode);
+            navLink.addClass('active');
+            Animate(menuLink);
+        }
+
+        $('#page').append('<div id="page-ajax-loaded-course" class="page-ajax-loaded-course animated fadeInLeft"></div>');
+        ajaxLoaderCourse();
+
+        $(document).on("click","#course-close-button", function () {
+            $('#page-ajax-loaded-course').addClass('fadeOutLeft');
+            $('#page-ajax-loaded-course > div').detach();
+        });
     }
 
     function getActivePage(page) {
 
         if(location.hash !== "") {
             return location.hash.split('/')[0];
+        } 
+        else if(page) {
+            return page;
+        } 
+        else {
+            return '#'+$(".pt-page-current").attr('data-id');
+        }
+
+    }
+
+    function getActivePagecourse(page) {
+
+        if(location.hashcourse !== "") {
+            return location.hashcourse.split('/')[0];
         } 
         else if(page) {
             return page;
