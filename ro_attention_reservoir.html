@@ -9,7 +9,7 @@
 
         <!-- Portfolio Title -->
         <div class="portfolio-title">
-            <h1>Developing a Learning-Based Control Architecture By Integrating Attention Mechanism and Reservoir Computing</h1>
+            <h1>Reservoir-Based State Estimation of Partially Observable Multi-Agent Systems</h1>
         </div>
 
         <div class="row">
@@ -43,37 +43,27 @@
                     <li>
                         <i class="fa fa-user"></i> 
                         <strong>Collaborators:</strong>
-                        <a href="https://scholar.google.com/citations?user=lHPbcs8AAAAJ&hl=en" target="_blank">Wenbin Wan</a>, 
-                        <a href="https://scholar.google.com/citations?user=RbczS_gAAAAJ&hl=en" target="_blank">Leilei Cui</a>,
-                        <a href="https://scholar.google.com/citations?user=5zVK6KIAAAAJ&hl=it" target="_blank">Francesco Martinuzzi</a>, 
-                        <a href="https://scholar.google.com/citations?user=OzOUu8AAAAAJ&hl=en" target="_blank">Joseph Hart</a>,
                         <a href="https://scholar.google.com/citations?user=-pHeI6oAAAAJ&hl=en" target="_blank">Francesco Sorrentino</a>
                     </li>  
                     <li>
-                        <i class="fa fa-calendar"></i> September 2025 - Present
+                        <i class="fa fa-calendar"></i> September 2025 - September 2026
                     </li>
                 </ul>
                 <div class="block-title">
                     <h3>Motivation</h3>
                 </div>
                 <p class="text-justify">
-                    Standard reservoir computers, while effective for modeling and prediction, struggle when used as standalone controllers for 
-                    closed-loop tracking. They treat all reservoir states equally and are typically trained to minimize prediction error rather 
-                    than tracking performance, which can lead to irrelevant or destabilizing dynamics and poor control behavior. This limitation 
-                    is critical for real-time control applications, where accurate and stable tracking is essential. In this research, we focused
-                     on development of a method that enable reservoir computers to directly generate reliable control inputs.
+                    Multi-agent complex systems often exhibit strongly coupled dynamics while only partial observations are available from individual agents. 
+                    In this research, reservoir computing is explored as a data-driven approach for reconstructing the unobserved state of one agent using 
+                    observations from other agents, without requiring explicit knowledge of the underlying system dynamics.
                 </p>
                 <div class="block-title">
                     <h3>Results</h3>
                 </div>
                 <p class="text-justify">
-                     To address this limitation, we first integrated a lightweight attention mechanism into the reservoir computer and evaluated it on
-                     an observation task. The results demonstrated that the attention-based nonlinear RC  outperforms the conventional 
-                     nonlinear RC in observation accuracy. Building on this, we are now extending the attention-based RC for control applications. 
-                     The attention mechanism dynamically reweights reservoir states according to their relevance for minimizing tracking error, 
-                     suppressing destabilizing or irrelevant dynamics and adapting to changing system states. This enables the reservoir computer 
-                     to function as a pure controller, achieving accurate and stable closed-loop tracking while maintaining computational efficiency 
-                     suitable for real-time implementation.
+                    Developed an attention-based reservoir computing framework for state reconstruction in partially observable multi-agent networks. 
+                    The proposed approach learns informative cross-agent interactions and selectively incorporates them into the reservoir feature space, 
+                    improving reconstruction accuracy while reducing the number of required features compared with conventional reservoir computing approaches.
                     </p>
                 <!-- Software and Frameworks -->
                 <div class="tags-block">
